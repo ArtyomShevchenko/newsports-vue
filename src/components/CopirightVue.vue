@@ -3,6 +3,7 @@
         <div class="wrapper">
             <div class="content">
                 <h2>copiright | yourname</h2>
+                <a class="test-link" href="#">Gradient</a>
                 <ul>
                     <a href="https://instagram.com">
                         <svg viewBox="0 0 24 24" width="96px" height="96px">
@@ -34,11 +35,7 @@
 </template>
 
 <script>
-export default {
-    mounted() {
-        console.log(window)
-    }
-}
+export default {}
 </script>
 
 <style scoped>
@@ -48,7 +45,7 @@ export default {
 
 .wrapper {
     max-width: 133rem;
-    padding: 6rem 0;
+    padding: 5.5rem 0;
 }
 
 .content {
@@ -87,5 +84,32 @@ a svg {
 a span {
     font-size: 1.6rem;
     color: var(--main-2);
+}
+
+
+
+
+/* -test */
+.test-link {
+    padding: 2rem 4rem;
+    background-color: inherit;
+
+    /* gradient: 50%=red, 45=black and  5%=yellow */
+    background:
+        linear-gradient(to bottom,
+            red 50%,
+            black 50% 95%,
+            yellow 95%);
+    /* size: x=100% y=200% */
+    background-size: 100% 200%;
+    /* position=top */
+    background-position: top;
+
+    transition: all .25s ease;
+}
+
+.test-link:hover {
+    /* position=bottom */
+    background-position: bottom;
 }
 </style>

@@ -18,9 +18,6 @@
                             <li>
                                 <RouterLink to="/contact">contact</RouterLink>
                             </li>
-                            <!-- </ul>
-
-                        <ul> -->
                             <li>
                                 <RouterLink to="/faqs">faqs</RouterLink>
                             </li>
@@ -51,10 +48,12 @@ export default {
 <style scoped>
 footer {
     background: linear-gradient(rgba(0, 0, 0, 0.6), var(--main-1));
+    margin-top: auto;
 }
 
 .wrapper {
     max-width: 133rem;
+
     padding: 6rem 0;
 }
 

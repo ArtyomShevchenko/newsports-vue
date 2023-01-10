@@ -83,12 +83,13 @@ html {
 }
 
 #app {
-  margin-top: 200px;
+  margin-top: 12.6rem;
   width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-height: 100vh;
   position: relative;
   background-color: var(--main-1);
   color: var(--text-1);

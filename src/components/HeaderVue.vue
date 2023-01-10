@@ -30,13 +30,13 @@ header {
     right: 0;
     z-index: 99;
 
-    padding: 45px 0;
+    padding: 4rem 0;
     background-color: var(--main-1);
     border-bottom: 1.6rem solid var(--main-2);
 }
 
 .wrapper {
-    max-width: 1330px;
+    max-width: 133rem;
     margin: 0 auto;
 }
 
@@ -45,11 +45,12 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    height: 4rem;
 }
 
 nav {
     display: flex;
-    gap: 40px;
+    gap: 4rem;
 }
 
 .router-link-active {

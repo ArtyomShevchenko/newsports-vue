@@ -547,5 +547,7 @@ export default {
     background-color: red;
     padding: 4rem;
     text-align: center;
+    height: 400px;
+    /* overflow: hidden; */
 }
 </style>
