@@ -1,33 +1,58 @@
-// import { createRouter, createWebHistory } from "vue-router"
-
-// // Pages
-// import AboutUsViews from "./pages/AboutUsViews.vue"
-
-// const routes = [
-//     { path: '/', component: AboutUsViews },
-// ]
-
-// const router = createRouter({
-//     history: createWebHistory(),
-//     routes
-// })
-
-// export default router
-
 import { createRouter, createWebHistory } from 'vue-router'
-import AboutUsViews from "./pages/AboutUsViews.vue"
+
+// imports views components
+import TeamVue from "./views/TeamVue.vue";
+import AboutVue from "./views/AboutVue.vue";
+import CompetitionVue from "./views/CompetitionVue.vue";
+import ContactVue from "./views/ContactVue.vue";
 
 const routes = [
     {
-        path: '/test',
+        path: '/',
         name: 'Home',
-        // component: () => import("./pages/HomePage.vue")
+        component: () => import("./views/HomeVue.vue")
+    },
+    {
+        path: '/team',
+        name: 'Team',
+        component: TeamVue,
+    },
+    {
+        path: '/competition',
+        name: 'Competition',
+        component: CompetitionVue,
     },
     {
         path: '/about',
         name: 'About',
-        component: AboutUsViews,
+        component: AboutVue,
     },
+    {
+        path: '/contact',
+        name: 'Contact',
+        component: ContactVue,
+    },
+    {
+        path: '/faqs',
+        name: 'Faqs',
+        component: null,
+    },
+    {
+        path: '/privacy',
+        name: 'Privacy',
+        component: null,
+    },
+    {
+        path: '/cookies',
+        name: 'Cookies',
+        component: null,
+    },
+    // {
+    //     path: '/error',
+    //     name: 'Error',
+    //     component: () => import("./views/ErrorVue.vue")
+    // },
+    { path: '/:pathMatch(.*)', component: () => import("./views/ErrorVue.vue") },
 ]
 
 const router = createRouter({

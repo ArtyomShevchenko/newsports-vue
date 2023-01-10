@@ -1,13 +1,11 @@
 <template>
-    <article class="wrapper column-1">
-        <section>
-            <h2>about us</h2>
-            <p>lorem ipsum dolor sit amet, consecteur adupisicing elit, sed do eiusmod tempor incididunt labore
-                et dolore magna aliqua. ut enim ad minim</p>
-            <!-- <img src="./media/image/Place Your Image Here-1.jpg" alt="Girl use VR"> -->
-            <button class="post-button">read more</button>
-        </section>
-    </article>
+    <section class="wrapper">
+        <h2>about us</h2>
+        <p>lorem ipsum dolor sit amet, consecteur adupisicing elit, sed do eiusmod tempor incididunt labore
+            et dolore magna aliqua. ut enim ad minim</p>
+        <img src="@/assets/image/image_2.jpg" alt="Girl use VR">
+        <button class="post-button">read more</button>
+    </section>
 </template>
 
 <script>

@@ -1,15 +1,16 @@
 <template>
-  <HeaderVue></HeaderVue>
-  <RouterView></RouterView>
+  <HeaderVue />
+  <RouterView />
+  <FooterVue />
 </template>
 
 <script>
+import HeaderVue from "@/components/HeaderVue.vue"
+import FooterVue from "@/components/FooterVue.vue"
 
 export default {
   name: 'App',
-  components: {
-    FooterComponent, HeaderComponent
-  }
+  components: { HeaderVue, FooterVue }
 }
 </script>
 
@@ -39,15 +40,18 @@ export default {
 }
 
 :root {
-  --blue: #0101a3;
+  --main-1: #0101a3;
+  --main-2: #e92bde;
+  --text-1: #ffffff;
+  /* --black: #000000; */
+  --text-2: #000000;
+
   --dark-blue: rgba(0, 0, 0, 0.2);
   --dark-mask: rgba(0, 0, 0, 0.6);
-  --pink: #e92bde;
-  --white: #ffffff;
   --light: #b6b6d3;
   --transparent: rgba(0, 0, 0, 0);
-  --black: #000000;
-  --font: "Bebas Neue", monospace;
+
+  --font: "Bebas Neue";
   --wrapper: 1190px;
 }
 
@@ -75,17 +79,19 @@ span {
 
 html {
   scroll-behavior: smooth;
+  font-size: 10px;
 }
 
 #app {
+  margin-top: 200px;
   width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  background-color: var(--blue);
-  color: var(--white);
+  background-color: var(--main-1);
+  color: var(--text-1);
   font-family: var(--font);
   font-size: 22px;
   text-transform: uppercase;
